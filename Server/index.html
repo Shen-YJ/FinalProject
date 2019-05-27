@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+  <div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <h2>单图上传</h2>
+      <!-- <input type="file" name="logo"> -->
+      <!-- <input type="submit" value="提交"> -->
+      <input type="text" id="textfield" class="txt" />
+      <input type="button" class="btn" value="浏览..." />
+      <input type="file" name="logo" class="file" id="fileField"
+        onchange="document.getElementById('textfield').value=this.files[0].name" />
+      <input type="submit" class="btn" value="上传" />
+    </form>
+  </div>
+</body>
